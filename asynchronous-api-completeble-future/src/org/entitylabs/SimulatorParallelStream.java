@@ -13,10 +13,13 @@ public class SimulatorParallelStream {
 		Shop shop2 = new Shop();
 		Shop shop3 = new Shop();
 		Shop shop4 = new Shop();
+		Shop shop5 = new Shop();
+		Shop shop6 = new Shop();
+		Shop shop7 = new Shop();
+		Shop shop8 = new Shop();
 
-		System.out.println(start);
 		var product = "First product";
-		var resp = List.of(shop1, shop2, shop3, shop4).parallelStream().map(shopSelected -> shopSelected.getPrice(product))
+		var resp = List.of(shop1, shop2, shop3, shop4, shop5,shop6,shop7,shop8).parallelStream().map(shopSelected -> shopSelected.getPrice(product))
 				.collect(Collectors.toList());
 		System.out.println(resp);
 		var end = System.nanoTime() / 1_000_000;
