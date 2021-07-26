@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.concurrent.Future;
 import java.util.stream.Collectors;
 
-public class SimulatorAsyncApi {
+public class SimulatorSequentialProcessingApi {
 
 	public static void main(String[] args) {
 
